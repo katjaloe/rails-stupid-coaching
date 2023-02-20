@@ -1,0 +1,35 @@
+<div class="container">
+<h1>Stupid Coaching</h1>
+<div class="cards">
+<% if @answer.include?("?") %>
+<div class="card-question">
+  <%= @answer %>
+  <p><em>-You</em></p>
+</div>
+<div class="card-answer">
+  <p>Silly question, get dressed and go to work!</p>
+  <p><em>-Your coach</em></p>
+</div>
+  <%elsif @answer == "I am going to work"%>
+  <div class="card-question">
+  <%= @answer %>
+  <p><em>-You</em></p>
+  </div>
+  <div class="card-answer">
+  <p>Great!</p>
+  <p><em>-Your coach</em></p>
+  </div>
+  <% else %>
+  <div class="card-question">
+  <%= @answer %>
+  <p><em>-You</em></p>
+  </div>
+  <div class="card-answer">
+  <p class="bold" >I don't care, get dressed and go to work!</p>
+  <p><em>-Your coach</em></p>
+  </div>
+<% end %>
+
+</div>
+<%= link_to "Ask a new question", ask_path %>
+</div>

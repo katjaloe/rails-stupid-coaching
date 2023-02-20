@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  font-family: "San Francisco (Numbers)";
+ }
+
+ .container {
+  max-width: 900px;
+  margin: 20px auto;
+ }
+
+ .cards {
+  max-width: 700px;
+  margin: 25px auto ;
+ }
+
+
+
+ .card-answer {
+  background-color: #ffffe1;
+  border-left: 6px solid #dddddd;
+  padding: 10px;
+  margin-bottom: 15px;
+ }
+
+ .card-question {
+  border-left: 6px solid #dddddd;
+  padding: 10px;
+  margin-bottom: 20px;
+ }
